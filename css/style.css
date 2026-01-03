@@ -36,7 +36,12 @@ body {
     sans-serif;
   color: var(--dark);
   background: var(--white);
-  line-height: 1.6;
+  line-height: 1.7;
+}
+
+p {
+  line-height: 1.75;
+  margin-bottom: 1em;
 }
 
 img {
@@ -908,7 +913,7 @@ textarea:focus {
 
 .service-description {
   color: var(--gray);
-  line-height: 1.7;
+  line-height: 1.75;
   margin-bottom: 12px;
   font-size: 15px;
 }
@@ -1077,7 +1082,7 @@ textarea:focus {
 
 .doctor-info p {
   color: var(--gray);
-  line-height: 1.7;
+  line-height: 1.75;
   font-size: 15px;
   margin: 0;
 }
@@ -1513,6 +1518,27 @@ h3 {
   line-height: 1.7;
   margin-top: 16px;
 }
+
+.map-container {
+  margin-top: 20px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border);
+}
+
+  .google-map {
+    width: 100%;
+    height: 400px;
+    border: 0;
+    display: block;
+  }
+
+  @media (max-width: 900px) {
+    .google-map {
+      height: 300px;
+    }
+  }
 
 .map-placeholder {
   height: 400px;
@@ -1964,15 +1990,23 @@ h3 {
   }
 
   section:first-of-type {
-    padding-top: 25px;
+    padding-top: 20px;
   }
 
   .hero {
-    padding: 40px 0;
+    padding: 35px 0;
   }
 
   .hero-container {
-    gap: 30px;
+    gap: 25px;
+  }
+
+  p {
+    line-height: 1.8;
+  }
+
+  .section-intro {
+    line-height: 1.75;
   }
 
   .page-header {
@@ -2372,7 +2406,7 @@ h3 {
 
   .service-description {
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.8;
   }
 
   .service-audience {

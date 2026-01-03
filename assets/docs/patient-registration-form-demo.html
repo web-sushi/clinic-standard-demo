@@ -69,7 +69,13 @@
       }
 
       .form-group {
-        margin-bottom: 20px;
+        margin-bottom: 24px;
+      }
+
+      @media (max-width: 768px) {
+        .form-group {
+          margin-bottom: 20px;
+        }
       }
 
       .form-group.full-width {
@@ -286,6 +292,10 @@
       </div>
 
       <div class="form-body">
+        <p style="margin-bottom: 30px; color: #475569; font-size: 15px; line-height: 1.7;">
+          Completing this form before your first visit helps us prepare for your appointment 
+          and ensures we have the necessary information to provide you with the best possible care.
+        </p>
         <div class="success-message" id="successMessage">
           Thank you! Your form has been submitted successfully.
         </div>
