@@ -14,7 +14,7 @@
       body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
           Oxygen, Ubuntu, Cantarell, sans-serif;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: #f1f5f9;
         padding: 20px;
         line-height: 1.6;
       }
@@ -29,7 +29,7 @@
       }
 
       .form-header {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: #2563eb;
         color: white;
         padding: 40px 30px;
         text-align: center;
@@ -55,7 +55,7 @@
 
       .section-title {
         font-size: 20px;
-        color: #667eea;
+        color: #2563eb;
         margin-bottom: 20px;
         padding-bottom: 10px;
         border-bottom: 2px solid #e0e7ff;
@@ -110,8 +110,8 @@
       select:focus,
       textarea:focus {
         outline: none;
-        border-color: #667eea;
-        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        border-color: #2563eb;
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
       }
 
       textarea {
@@ -177,7 +177,7 @@
       }
 
       .submit-btn {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: #2563eb;
         color: white;
         padding: 15px 40px;
         border: none;
@@ -185,13 +185,19 @@
         font-size: 16px;
         font-weight: 600;
         cursor: pointer;
-        transition: transform 0.2s, box-shadow 0.2s;
+        transition: all 0.3s ease;
         width: 100%;
       }
 
       .submit-btn:hover {
+        background: #1d4ed8;
         transform: translateY(-2px);
-        box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+      }
+
+      .submit-btn:focus {
+        outline: 2px solid #2563eb;
+        outline-offset: 2px;
       }
 
       .submit-btn:active {
@@ -199,6 +205,10 @@
       }
 
       @media (max-width: 768px) {
+        body {
+          padding: 15px;
+        }
+
         .form-row {
           grid-template-columns: 1fr;
         }
@@ -211,9 +221,29 @@
           padding: 30px 20px;
         }
 
+        .form-header h1 {
+          font-size: 24px;
+        }
+
         .radio-group {
           flex-direction: column;
           gap: 10px;
+        }
+
+        .submit-btn {
+          padding: 16px 24px;
+          font-size: 16px;
+          min-height: 48px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+          padding: 14px 16px;
+          font-size: 16px;
         }
       }
 
